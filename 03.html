@@ -5,7 +5,11 @@
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>视频 03.mp4 | NB网盘</title>
 	<script type="text/javascript">
-	
+	function dl(url,fileName){ const link = document.createElement('a');
+  link.href = url;
+  link.download = fileName;
+  link.target = "_blank"; // 可选，如果希望在新窗口中下载文件，请取消注释此行
+  link.click();}
 		</script>
 	<body style="background-image: linear-gradient(90deg , #1e62ec, #0A80ee);color: #212121;margin:5%;font-family: 'dx'">
 		<style>
@@ -48,7 +52,7 @@
 			</video>
     </div>
 			<button style="background-color: darkslategray;font-size:15pt; color: white; border-radius:50px;margin-left:5%;font-family: 'dx' " id="LB" onClick="
-location.href = '03.mp4'">下载</button></div></div>
+dl('03.mp4','03.mp4');">下载</button></div></div>
 		
 		
 		<br><br><br></body>
